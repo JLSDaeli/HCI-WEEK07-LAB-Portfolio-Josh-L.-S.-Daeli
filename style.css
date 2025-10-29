@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* --- Header ---*/
+header {
+    background-color: #968F8F;
+    text-align: center;
+    padding: 30px;
+}
+header h1 {
+    font-size: 3em;
+    font-weight: 550;
+    margin-bottom: 17px;
+    color: white;
+}
+header p {
+    font-size: 2.5em;
+    color: white;
+    font-style:italic;
+}
+
+nav {
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: 550;
+}
+nav a:hover{
+    color: darkslateblue;
+}
+
+/* --- Layout --- */
+.container {
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+    background-color: #ECECEC;
+}
+
+.left-column, .right-column {
+    margin: 31px;
+    flex: 1;
+}
+
+.about-me, .contact{
+    background-color: #D9D9D9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5.7px 11px rgba(0,0,0,0.14);
+}
+
+.about-me h2, .contact h2{
+    font-size: 1.3em;
+    margin-bottom: 14px;
+    font-weight: 460; 
+    color: black;
+    line-height: 1.6;
+    color: black;
+}
+
+.about-me p, .contact p {
+    line-height: 1.57;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.projects, .skills {
+    background-color: #D9D9D9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5.7px 11px rgba(0,0,0,0.14);
+}
+
+.projects h2, .skills h2{
+    font-size: 1.3em;
+    margin-bottom: 14px;
+    font-weight: 460; 
+    color: black;
+    line-height: 1.6;
+    color: black;
+}
+
+.projects p, .skills p {
+    line-height: 1.57;
+    text-align: justify;
+    font-size: 15px;
+}
+
+footer {
+    background-color:#968F8F;
+    color: white;
+    text-align: center;
+    padding: 19px;
+    font-size: 0.87em;
+}
+
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+        padding: 23px;
+        align-items: center;
+    }
+    .left-column, .right-column {
+        width: 100%;
+        margin: 19px;
+        padding: 27px;
+    }
+    header h1 {
+        font-size: 2.3em;
+    }
+    header p {
+        font-size: 1.5em;
+    }
+    nav a {
+        font-size: 0.97em;
+    }
+    nav {
+        flex-direction: row;
+        text-align: center;
+        gap: 20px;
+    }
+    .about-me, .contact, .projects, .skills {
+        padding: 25px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 472px) {
+    .container {
+        flex-direction: column;
+        padding: 22px;
+        align-items: center;
+    }
+    .left-column, .right-column {
+        width: 100%;
+        margin: 9px;
+        padding: 17px;
+    }
+    header h1 {
+        font-size: 1.9em;
+    }
+    header p {
+        font-size: 1.2em;
+    }
+    nav a {
+        font-size: 0.87em;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 9px;
+    }
+    .about-me, .contact, .projects, .skills {
+        padding: 17px;
+        width: 100%;
+    }
+}
+
+/* --- Visual --- */
+
+nav a, .about-me {
+transition: all 0.37s ease;
+}   
+
+nav a:hover {
+    color: lightgrey;
+}
+
+.about-me:hover {
+    transform:translateY(-7px);
+    box-shadow: 0 5.7px 15px rgba(0,0,0,0.22);
+}
+
+.contact:hover, .projects:hover, .skills:hover {
+    transform:translateY(-7px);
+    box-shadow: 0 5.7px 15px rgba(0,0,0,0.17);
+}
+
+h1 {
+    color: white;
+}
+
+.about-me {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.14);
+}
+
+p {
+    line-height: 1.7;
+    letter-spacing: 0.9px;
+}
+
+
+
+
+
+
+
