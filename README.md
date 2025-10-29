@@ -24,6 +24,7 @@ using flexbox, color schemes, responsive media queries, and hover effects to mai
 professional over all devices.
 
 ## Live Website
+https://github.com/JLSDaeli/HCI-WEEK07-LAB-Portfolio-Josh-L.-S.-Daeli
 
 
 ## Design Reference
